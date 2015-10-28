@@ -1,0 +1,3 @@
+rootProject.name = 'CreedProfetas'
+
+include ':app'
