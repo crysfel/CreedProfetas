@@ -19,24 +19,26 @@
 		139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 139FDEF41B06529B00C62182 /* libRCTWebSocket.a */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
-		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		146834051AC3E58100842450 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
-		D35E0E681BB46D2000B42588 /* gradient.png in Resources */ = {isa = PBXBuildFile; fileRef = D35E0E671BB46D2000B42588 /* gradient.png */; settings = {ASSET_TAGS = (); }; };
-		D35E0E751BB46D5D00B42588 /* book263.png in Resources */ = {isa = PBXBuildFile; fileRef = D35E0E6A1BB46D5D00B42588 /* book263.png */; settings = {ASSET_TAGS = (); }; };
-		D35E0E761BB46D5D00B42588 /* book263@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D35E0E6B1BB46D5D00B42588 /* book263@2x.png */; settings = {ASSET_TAGS = (); }; };
-		D35E0E771BB46D5D00B42588 /* calendar146.png in Resources */ = {isa = PBXBuildFile; fileRef = D35E0E6C1BB46D5D00B42588 /* calendar146.png */; settings = {ASSET_TAGS = (); }; };
-		D35E0E781BB46D5D00B42588 /* calendar146@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D35E0E6D1BB46D5D00B42588 /* calendar146@2x.png */; settings = {ASSET_TAGS = (); }; };
-		D35E0E791BB46D5D00B42588 /* christianity.png in Resources */ = {isa = PBXBuildFile; fileRef = D35E0E6E1BB46D5D00B42588 /* christianity.png */; settings = {ASSET_TAGS = (); }; };
-		D35E0E7A1BB46D5D00B42588 /* christianity@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D35E0E6F1BB46D5D00B42588 /* christianity@2x.png */; settings = {ASSET_TAGS = (); }; };
-		D35E0E7B1BB46D5D00B42588 /* information15.png in Resources */ = {isa = PBXBuildFile; fileRef = D35E0E701BB46D5D00B42588 /* information15.png */; settings = {ASSET_TAGS = (); }; };
-		D35E0E7C1BB46D5D00B42588 /* information15@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D35E0E711BB46D5D00B42588 /* information15@2x.png */; settings = {ASSET_TAGS = (); }; };
-		D35E0E7D1BB46D5D00B42588 /* left207.png in Resources */ = {isa = PBXBuildFile; fileRef = D35E0E721BB46D5D00B42588 /* left207.png */; settings = {ASSET_TAGS = (); }; };
-		D35E0E7E1BB46D5D00B42588 /* player6.png in Resources */ = {isa = PBXBuildFile; fileRef = D35E0E731BB46D5D00B42588 /* player6.png */; settings = {ASSET_TAGS = (); }; };
-		D35E0E7F1BB46D5D00B42588 /* player12.png in Resources */ = {isa = PBXBuildFile; fileRef = D35E0E741BB46D5D00B42588 /* player12.png */; settings = {ASSET_TAGS = (); }; };
+		D35E0E681BB46D2000B42588 /* gradient.png in Resources */ = {isa = PBXBuildFile; fileRef = D35E0E671BB46D2000B42588 /* gradient.png */; };
+		D35E0E751BB46D5D00B42588 /* book263.png in Resources */ = {isa = PBXBuildFile; fileRef = D35E0E6A1BB46D5D00B42588 /* book263.png */; };
+		D35E0E761BB46D5D00B42588 /* book263@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D35E0E6B1BB46D5D00B42588 /* book263@2x.png */; };
+		D35E0E771BB46D5D00B42588 /* calendar146.png in Resources */ = {isa = PBXBuildFile; fileRef = D35E0E6C1BB46D5D00B42588 /* calendar146.png */; };
+		D35E0E781BB46D5D00B42588 /* calendar146@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D35E0E6D1BB46D5D00B42588 /* calendar146@2x.png */; };
+		D35E0E791BB46D5D00B42588 /* christianity.png in Resources */ = {isa = PBXBuildFile; fileRef = D35E0E6E1BB46D5D00B42588 /* christianity.png */; };
+		D35E0E7A1BB46D5D00B42588 /* christianity@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D35E0E6F1BB46D5D00B42588 /* christianity@2x.png */; };
+		D35E0E7B1BB46D5D00B42588 /* information15.png in Resources */ = {isa = PBXBuildFile; fileRef = D35E0E701BB46D5D00B42588 /* information15.png */; };
+		D35E0E7C1BB46D5D00B42588 /* information15@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D35E0E711BB46D5D00B42588 /* information15@2x.png */; };
+		D35E0E7D1BB46D5D00B42588 /* left207.png in Resources */ = {isa = PBXBuildFile; fileRef = D35E0E721BB46D5D00B42588 /* left207.png */; };
+		D35E0E7E1BB46D5D00B42588 /* player6.png in Resources */ = {isa = PBXBuildFile; fileRef = D35E0E731BB46D5D00B42588 /* player6.png */; };
+		D35E0E7F1BB46D5D00B42588 /* player12.png in Resources */ = {isa = PBXBuildFile; fileRef = D35E0E741BB46D5D00B42588 /* player12.png */; };
 		D35E0E861BB4744E00B42588 /* libRCTVideo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D35E0E851BB4743000B42588 /* libRCTVideo.a */; };
-		D35E0E881BB4A3D000B42588 /* Images-2.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D35E0E871BB4A3D000B42588 /* Images-2.xcassets */; settings = {ASSET_TAGS = (); }; };
+		D35E0E881BB4A3D000B42588 /* Images-2.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D35E0E871BB4A3D000B42588 /* Images-2.xcassets */; };
+		D37CE6E71BE9466C00C87055 /* banner-default.png in Resources */ = {isa = PBXBuildFile; fileRef = D37CE6E51BE9466C00C87055 /* banner-default.png */; };
+		D37CE6E81BE9466C00C87055 /* ios.png in Resources */ = {isa = PBXBuildFile; fileRef = D37CE6E61BE9466C00C87055 /* ios.png */; };
+		D3B207431BE94A63001DE900 /* libSafariViewManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D3B207421BE94A5B001DE900 /* libSafariViewManager.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -124,6 +126,13 @@
 			remoteGlobalIDString = 134814201AA4EA6300B7C361;
 			remoteInfo = RCTVideo;
 		};
+		D3B207411BE94A5B001DE900 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D3B207321BE94A5A001DE900 /* SafariViewManager.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 134814201AA4EA6300B7C361;
+			remoteInfo = SafariViewManager;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -142,7 +151,6 @@
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = CreedProfetas/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = CreedProfetas/AppDelegate.m; sourceTree = "<group>"; };
 		13B07FB21A68108700A75B9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = CreedProfetas/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = CreedProfetas/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = CreedProfetas/main.m; sourceTree = "<group>"; };
 		146833FF1AC3E56700842450 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
@@ -162,6 +170,9 @@
 		D35E0E741BB46D5D00B42588 /* player12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = player12.png; path = ../assets/icons/player12.png; sourceTree = "<group>"; };
 		D35E0E801BB4743000B42588 /* RCTVideo.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTVideo.xcodeproj; path = "../node_modules/react-native-video/RCTVideo.xcodeproj"; sourceTree = "<group>"; };
 		D35E0E871BB4A3D000B42588 /* Images-2.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = "Images-2.xcassets"; path = "CreedProfetas/Images-2.xcassets"; sourceTree = "<group>"; };
+		D37CE6E51BE9466C00C87055 /* banner-default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "banner-default.png"; sourceTree = "<group>"; };
+		D37CE6E61BE9466C00C87055 /* ios.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ios.png; sourceTree = "<group>"; };
+		D3B207321BE94A5A001DE900 /* SafariViewManager.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SafariViewManager.xcodeproj; path = "../node_modules/react-native-safari-view/SafariViewManager.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +187,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3B207431BE94A63001DE900 /* libSafariViewManager.a in Frameworks */,
 				D35E0E861BB4744E00B42588 /* libRCTVideo.a in Frameworks */,
 				146834051AC3E58100842450 /* libReact.a in Frameworks */,
 				00C302E51ABCBA2D00DB3ED1 /* libRCTActionSheet.a in Frameworks */,
@@ -272,7 +284,6 @@
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
-				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
 				13B07FB71A68108700A75B9A /* main.m */,
@@ -300,6 +311,7 @@
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				D3B207321BE94A5A001DE900 /* SafariViewManager.xcodeproj */,
 				D35E0E801BB4743000B42588 /* RCTVideo.xcodeproj */,
 				146833FF1AC3E56700842450 /* React.xcodeproj */,
 				00C302A71ABCB8CE00DB3ED1 /* RCTActionSheet.xcodeproj */,
@@ -350,6 +362,8 @@
 			isa = PBXGroup;
 			children = (
 				D35E0E671BB46D2000B42588 /* gradient.png */,
+				D37CE6E61BE9466C00C87055 /* ios.png */,
+				D37CE6E51BE9466C00C87055 /* banner-default.png */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -376,6 +390,14 @@
 			isa = PBXGroup;
 			children = (
 				D35E0E851BB4743000B42588 /* libRCTVideo.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D3B207331BE94A5A001DE900 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D3B207421BE94A5B001DE900 /* libSafariViewManager.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -492,6 +514,10 @@
 					ProductGroup = 146834001AC3E56700842450 /* Products */;
 					ProjectRef = 146833FF1AC3E56700842450 /* React.xcodeproj */;
 				},
+				{
+					ProductGroup = D3B207331BE94A5A001DE900 /* Products */;
+					ProjectRef = D3B207321BE94A5A001DE900 /* SafariViewManager.xcodeproj */;
+				},
 			);
 			projectRoot = "";
 			targets = (
@@ -579,6 +605,13 @@
 			remoteRef = D35E0E841BB4743000B42588 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		D3B207421BE94A5B001DE900 /* libSafariViewManager.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSafariViewManager.a;
+			remoteRef = D3B207411BE94A5B001DE900 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
@@ -593,6 +626,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D37CE6E71BE9466C00C87055 /* banner-default.png in Resources */,
+				D37CE6E81BE9466C00C87055 /* ios.png in Resources */,
 				008F07F31AC5B25A0029DE68 /* main.jsbundle in Resources */,
 				D35E0E7A1BB46D5D00B42588 /* christianity@2x.png in Resources */,
 				D35E0E881BB4A3D000B42588 /* Images-2.xcassets in Resources */,
@@ -607,7 +642,6 @@
 				D35E0E761BB46D5D00B42588 /* book263@2x.png in Resources */,
 				D35E0E7C1BB46D5D00B42588 /* information15@2x.png in Resources */,
 				D35E0E7D1BB46D5D00B42588 /* left207.png in Resources */,
-				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -696,7 +730,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = BrandAsset;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -715,7 +749,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = BrandAsset;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
