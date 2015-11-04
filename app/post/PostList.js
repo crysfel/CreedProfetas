@@ -2,9 +2,12 @@
 
 var React   = require('react-native');
 var Toolbar = require('../common/Toolbar');
+var Banner = require('../common/Banner');
 var PostView = require('./PostView');
 
 var STORAGE_KEY = '@CreedProfetasData:key';
+var DAYS_WEEK = ['Domingo','Lunes','Martes','Miércoles','Jueves','Viernes','Sábado'];
+var MONTHS = ['Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre'];
 
 var {
     Component,
@@ -73,6 +76,7 @@ class PostList extends Component{
         return (
             <View style={styles.mainContainer}>
                 <Toolbar title={title}></Toolbar>
+                <Banner></Banner>
                 <ListView
                     dataSource={this.state.dataSource}
                     renderRow={this.renderPost.bind(this)}
@@ -82,7 +86,9 @@ class PostList extends Component{
     }
 
     renderPost(post){
-        post.preview = post.pubDate[0];
+        var date = new Date(post.pubDate[0]);
+
+        post.preview = `${DAYS_WEEK[date.getDay()]} ${date.getDate()}, ${MONTHS[date.getMonth()]} ${date.getFullYear()}`;
 
         return (
             <TouchableHighlight 
