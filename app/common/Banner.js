@@ -2,7 +2,7 @@
 
 var React   = require('react-native');
 var Device = require('../common/Device');
-var SafariView = require('react-native-safari-view');
+
 
 var {
     Component,
@@ -19,14 +19,16 @@ class Banner extends Component{
         super(props);
         
         this.state = {
-            
+            safariSupport : true
         };
     }
 
     openLink(){
-        SafariView.show({
-            url: 'http://mybibleheroes.com/'
-        });
+        var me = this;
+
+        if(me.props.onClick){
+            me.props.onClick();
+        }
     }
 
     
@@ -42,13 +44,24 @@ class Banner extends Component{
                     
                     <Image style={styles.iosImage}
                         source={require('image!ios')}></Image>
-
+                    <View style={styles.textContainer}>
+                        <Text style={styles.title}>My Bible Heroes</Text>
+                        <Text style={styles.description}>Historias animadas de la Biblia</Text>
+                    </View>
                 </Image>
             </TouchableHighlight>
         );
     }
 
-
+    renderWebview(){
+        if(!this.state.safariSupport){
+            return (
+                <View style={styles.webviewContainer}>
+                    <Text>Cerrar</Text>
+                </View>
+            );
+        }
+    }
 }
 
 var styles = StyleSheet.create({
@@ -57,15 +70,43 @@ var styles = StyleSheet.create({
     },
     bannerImage     : {
         width   : Device.width,
-        height  : 80,
-        // flexDirection: 'row',
+        height  : 70,
+        flexDirection: 'row',
         alignItems:'center'
     },
     iosImage        : {
         width   : 87,
         height  : 25,
         backgroundColor: 'transparent',
-        marginTop:25
+        marginLeft:15
+    },
+    textContainer   : {
+        margin:10,
+        backgroundColor: 'transparent',
+    },
+    title           : {
+        backgroundColor: 'transparent',
+        color   : '#f57f20',
+        fontWeight  : 'bold',
+        fontSize    : 20,
+        shadowColor: "#000000",
+        shadowOpacity: 0.8,
+        shadowRadius: 2,
+        shadowOffset: {
+          height: 1,
+          width: 0
+        }
+    },
+    description     : {
+        backgroundColor: 'transparent',
+        color   : '#ffffff',
+        shadowColor: "#000000",
+        shadowOpacity: 0.8,
+        shadowRadius: 2,
+        shadowOffset: {
+          height: 1,
+          width: 0
+        }
     }
 });
 

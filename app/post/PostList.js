@@ -3,7 +3,9 @@
 var React   = require('react-native');
 var Toolbar = require('../common/Toolbar');
 var Banner = require('../common/Banner');
+var BrowserView = require('../common/BrowserView');
 var PostView = require('./PostView');
+var SafariView = require('react-native-safari-view');
 
 var STORAGE_KEY = '@CreedProfetasData:key';
 var DAYS_WEEK = ['Domingo','Lunes','Martes','Miércoles','Jueves','Viernes','Sábado'];
@@ -64,6 +66,19 @@ class PostList extends Component{
         });
     }
 
+    openBannerLink(post){
+        SafariView.isAvailable()
+            .then(SafariView.show({
+                url: 'http://mybibleheroes.com/'
+            }))
+            .catch(error => {
+                // Fallback WebView code for iOS 8 and earlier
+                this.props.navigator.push({
+                    component   : BrowserView
+                });
+            });
+    }
+
     render(){
         var title;
 
@@ -76,7 +91,7 @@ class PostList extends Component{
         return (
             <View style={styles.mainContainer}>
                 <Toolbar title={title}></Toolbar>
-                <Banner></Banner>
+                <Banner onClick={this.openBannerLink.bind(this)}></Banner>
                 <ListView
                     dataSource={this.state.dataSource}
                     renderRow={this.renderPost.bind(this)}
@@ -86,9 +101,15 @@ class PostList extends Component{
     }
 
     renderPost(post){
-        var date = new Date(post.pubDate[0]);
+        var date = new Date(post.pubDate[0]),
+            image;
 
         post.preview = `${DAYS_WEEK[date.getDay()]} ${date.getDate()}, ${MONTHS[date.getMonth()]} ${date.getFullYear()}`;
+        if(post.book){
+            image = require('image!egw-icon');
+        }else{
+            image = require('image!biblia-icon');
+        }
 
         return (
             <TouchableHighlight 
@@ -97,7 +118,7 @@ class PostList extends Component{
                 onPress={() => this.showPost(post)}>
                 <View style={styles.postItem}>
                     <Image style={styles.postImage}
-                    source={{uri:post.tns}} />
+                        source={image} />
                     <View style={styles.postContent}>
                         <Text style={styles.title}>{post.title}</Text>
                         <Text style={styles.preview}>{post.preview}</Text>
