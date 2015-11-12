@@ -18,6 +18,7 @@ class PostMain extends Component{
                 navigationBarHidden={true}
                 initialRoute={{
                     component   : PostList,
+                    title       : '',
                     passProps   : {
                         isBible : this.props.isBible
                     }

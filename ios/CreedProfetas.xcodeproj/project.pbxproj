@@ -41,6 +41,11 @@
 		D38C79D31BE9A8EF006F5527 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = D38C79D21BE9A8EF006F5527 /* data.json */; };
 		D38C79D61BEA949B006F5527 /* biblia-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D38C79D41BEA949B006F5527 /* biblia-icon.png */; };
 		D38C79D71BEA949B006F5527 /* egw-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D38C79D51BEA949B006F5527 /* egw-icon.png */; };
+		D3B126551BF526A2001EBA7F /* libRNFS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D3B126531BF5265D001EBA7F /* libRNFS.a */; };
+		D3B1265A1BF5499C001EBA7F /* cloud107.png in Resources */ = {isa = PBXBuildFile; fileRef = D3B126561BF5499C001EBA7F /* cloud107.png */; };
+		D3B1265B1BF5499C001EBA7F /* cloud107@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D3B126571BF5499C001EBA7F /* cloud107@2x.png */; };
+		D3B1265C1BF5499C001EBA7F /* delete97.png in Resources */ = {isa = PBXBuildFile; fileRef = D3B126581BF5499C001EBA7F /* delete97.png */; };
+		D3B1265D1BF5499C001EBA7F /* delete97@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D3B126591BF5499C001EBA7F /* delete97@2x.png */; };
 		D3B207431BE94A63001DE900 /* libSafariViewManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D3B207421BE94A5B001DE900 /* libSafariViewManager.a */; };
 /* End PBXBuildFile section */
 
@@ -129,6 +134,13 @@
 			remoteGlobalIDString = 134814201AA4EA6300B7C361;
 			remoteInfo = RCTVideo;
 		};
+		D3B126521BF5265D001EBA7F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D3B126431BF5265D001EBA7F /* RNFS.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F12AFB9B1ADAF8F800E0535D;
+			remoteInfo = RNFS;
+		};
 		D3B207411BE94A5B001DE900 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D3B207321BE94A5A001DE900 /* SafariViewManager.xcodeproj */;
@@ -178,6 +190,11 @@
 		D38C79D21BE9A8EF006F5527 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = data.json; path = ../assets/data/data.json; sourceTree = "<group>"; };
 		D38C79D41BEA949B006F5527 /* biblia-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "biblia-icon.png"; path = "../assets/images/biblia-icon.png"; sourceTree = "<group>"; };
 		D38C79D51BEA949B006F5527 /* egw-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "egw-icon.png"; path = "../assets/images/egw-icon.png"; sourceTree = "<group>"; };
+		D3B126431BF5265D001EBA7F /* RNFS.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RNFS.xcodeproj; path = "../node_modules/react-native-fs/RNFS.xcodeproj"; sourceTree = "<group>"; };
+		D3B126561BF5499C001EBA7F /* cloud107.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cloud107.png; path = ../assets/icons/cloud107.png; sourceTree = "<group>"; };
+		D3B126571BF5499C001EBA7F /* cloud107@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "cloud107@2x.png"; path = "../assets/icons/cloud107@2x.png"; sourceTree = "<group>"; };
+		D3B126581BF5499C001EBA7F /* delete97.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = delete97.png; path = ../assets/icons/delete97.png; sourceTree = "<group>"; };
+		D3B126591BF5499C001EBA7F /* delete97@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "delete97@2x.png"; path = "../assets/icons/delete97@2x.png"; sourceTree = "<group>"; };
 		D3B207321BE94A5A001DE900 /* SafariViewManager.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SafariViewManager.xcodeproj; path = "../node_modules/react-native-safari-view/SafariViewManager.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -193,6 +210,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3B126551BF526A2001EBA7F /* libRNFS.a in Frameworks */,
 				D3B207431BE94A63001DE900 /* libSafariViewManager.a in Frameworks */,
 				D35E0E861BB4744E00B42588 /* libRCTVideo.a in Frameworks */,
 				146834051AC3E58100842450 /* libReact.a in Frameworks */,
@@ -317,6 +335,7 @@
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				D3B126431BF5265D001EBA7F /* RNFS.xcodeproj */,
 				D3B207321BE94A5A001DE900 /* SafariViewManager.xcodeproj */,
 				D35E0E801BB4743000B42588 /* RCTVideo.xcodeproj */,
 				146833FF1AC3E56700842450 /* React.xcodeproj */,
@@ -380,6 +399,10 @@
 		D35E0E691BB46D4C00B42588 /* Icons */ = {
 			isa = PBXGroup;
 			children = (
+				D3B126561BF5499C001EBA7F /* cloud107.png */,
+				D3B126571BF5499C001EBA7F /* cloud107@2x.png */,
+				D3B126581BF5499C001EBA7F /* delete97.png */,
+				D3B126591BF5499C001EBA7F /* delete97@2x.png */,
 				D35E0E6A1BB46D5D00B42588 /* book263.png */,
 				D35E0E6B1BB46D5D00B42588 /* book263@2x.png */,
 				D35E0E6C1BB46D5D00B42588 /* calendar146.png */,
@@ -409,6 +432,14 @@
 				D38C79D21BE9A8EF006F5527 /* data.json */,
 			);
 			name = Data;
+			sourceTree = "<group>";
+		};
+		D3B126441BF5265D001EBA7F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D3B126531BF5265D001EBA7F /* libRNFS.a */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		D3B207331BE94A5A001DE900 /* Products */ = {
@@ -532,6 +563,10 @@
 					ProjectRef = 146833FF1AC3E56700842450 /* React.xcodeproj */;
 				},
 				{
+					ProductGroup = D3B126441BF5265D001EBA7F /* Products */;
+					ProjectRef = D3B126431BF5265D001EBA7F /* RNFS.xcodeproj */;
+				},
+				{
 					ProductGroup = D3B207331BE94A5A001DE900 /* Products */;
 					ProjectRef = D3B207321BE94A5A001DE900 /* SafariViewManager.xcodeproj */;
 				},
@@ -622,6 +657,13 @@
 			remoteRef = D35E0E841BB4743000B42588 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		D3B126531BF5265D001EBA7F /* libRNFS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRNFS.a;
+			remoteRef = D3B126521BF5265D001EBA7F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		D3B207421BE94A5B001DE900 /* libSafariViewManager.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
@@ -648,14 +690,18 @@
 				D37CE6E81BE9466C00C87055 /* ios.png in Resources */,
 				D38C79D61BEA949B006F5527 /* biblia-icon.png in Resources */,
 				008F07F31AC5B25A0029DE68 /* main.jsbundle in Resources */,
+				D3B1265A1BF5499C001EBA7F /* cloud107.png in Resources */,
 				D35E0E7A1BB46D5D00B42588 /* christianity@2x.png in Resources */,
+				D3B1265D1BF5499C001EBA7F /* delete97@2x.png in Resources */,
 				D35E0E881BB4A3D000B42588 /* Images-2.xcassets in Resources */,
 				D35E0E7F1BB46D5D00B42588 /* player12.png in Resources */,
 				D35E0E681BB46D2000B42588 /* gradient.png in Resources */,
 				D38C79D31BE9A8EF006F5527 /* data.json in Resources */,
 				D35E0E751BB46D5D00B42588 /* book263.png in Resources */,
 				D35E0E7B1BB46D5D00B42588 /* information15.png in Resources */,
+				D3B1265B1BF5499C001EBA7F /* cloud107@2x.png in Resources */,
 				D35E0E7E1BB46D5D00B42588 /* player6.png in Resources */,
+				D3B1265C1BF5499C001EBA7F /* delete97.png in Resources */,
 				D35E0E791BB46D5D00B42588 /* christianity.png in Resources */,
 				D35E0E771BB46D5D00B42588 /* calendar146.png in Resources */,
 				D35E0E781BB46D5D00B42588 /* calendar146@2x.png in Resources */,

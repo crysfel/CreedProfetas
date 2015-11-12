@@ -31,6 +31,12 @@ class Player extends Component{
         };
     }
 
+    componentWillReceiveProps(nextProps) {
+        this.setState({
+            url     : nextProps.url
+        });
+    }
+
     setProgressWidth(event){
         this.barWidth = event.nativeEvent.layout.width;
     }

@@ -12,10 +12,37 @@ var {
 } = React;
 
 class Toolbar extends Component{
+    constructor(props){
+        super(props);
+
+        this.state = {
+            downloadBtn : props.downloadBtn,
+            downloaded  : props.downloaded
+        };
+
+    }
+
+    componentWillReceiveProps(nextProps) {
+        this.setState({
+            downloaded     : nextProps.downloaded
+        });
+    }
 
     goBack(){
         if(this.props.onPress){
             this.props.onPress();
+        }
+    }
+
+    onRemove(){
+        if(this.props.onRemove){
+            this.props.onRemove();
+        }
+    }
+
+    onDownload(){
+        if(this.props.onDownload){
+            this.props.onDownload();
         }
     }
 
@@ -25,6 +52,7 @@ class Toolbar extends Component{
                 {[ this.renderBackButton() ]}
                 <Text style={styles.toolbarText}>{this.props.title}</Text>
                 {[ this.renderEmptyButton() ]}
+                {[ this.renderDownloadButton() ]}
             </View>
         );
     }
@@ -44,11 +72,37 @@ class Toolbar extends Component{
     }
 
     renderEmptyButton(){
-        if(this.props.backBtn){
+        if(this.props.backBtn && !this.state.downloadBtn){
             return (
                 <View style={styles.button}>
                 </View>
             );
+        }
+    }
+
+    renderDownloadButton(){
+        if(this.state.downloadBtn){
+            if(this.state.downloaded){
+                return (
+                    <TouchableHighlight 
+                        style={styles.button}
+                        underlayColor='#76B09C'
+                        onPress={() => this.onRemove()}>
+                            <Image style={styles.icon}
+                                source={require('image!delete97')}/>
+                    </TouchableHighlight>
+                );
+            }else{
+                return (
+                    <TouchableHighlight 
+                        style={styles.button}
+                        underlayColor='#76B09C'
+                        onPress={() => this.onDownload()}>
+                            <Image style={styles.icon}
+                                source={require('image!cloud107')}/>
+                    </TouchableHighlight>
+                );
+            }
         }
     }
 
@@ -69,16 +123,16 @@ var styles = StyleSheet.create({
         textAlign: 'center'
     },
     button:{
-        width:25,
-        height:25,
-        paddingLeft:4,
+        width:28,
+        height:28,
+        paddingLeft:2,
         borderRadius:3
     },
     icon:{
         tintColor:'#fff',
-        width:15,
-        height:15,
-        marginTop:4
+        width:25,
+        height:25,
+        marginTop:1
     }
 });
 

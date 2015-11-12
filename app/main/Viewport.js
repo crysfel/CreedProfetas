@@ -28,6 +28,8 @@ class Viewport extends Component{
         this.state = {
             isLoading   : true
         };
+
+        AlertIOS.alert('Alerta','Esta aplicación utiliza tu conexión a internet para reproducir los audios. Asegurate de descargar los audios para escucharlos offline y no gastar tu plan de datos.');
     }
 
     componentDidMount() {
