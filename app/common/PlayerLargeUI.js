@@ -21,6 +21,7 @@ class Player extends Component{
         super(props);
         
         this.state = {
+            startStreaming : false,
             isLoading   : false,
             loaded      : false,
             playing     : false,
@@ -50,7 +51,8 @@ class Player extends Component{
 
         this.setState({
             playing : playing,
-            url     : this.state.url
+            url     : this.state.url,
+            startStreaming : true
         });
 
         if(this.props.onToggle){
@@ -125,7 +127,7 @@ class Player extends Component{
     }
 
     renderAudioPlayer(){
-        if(this.state.url){
+        if(this.state.startStreaming){
             return (
                 <Video source={{uri: this.state.url}} // Can be a URL or a local file.
                     rate={1.0}                   // 0 is paused, 1 is normal.
